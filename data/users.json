@@ -1,0 +1,16 @@
+{
+    "users": [
+        {
+            "email": "neela@bal.com",
+            "password": "test"
+        },
+        {
+            "email": "girish@bal.com",
+            "password": "girishpass"
+        },
+        {
+            "email": "balaji@bal.com",
+            "password": "balajipass"
+        }
+    ]
+}

@@ -4,10 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b57d927-225c-4399-8852-5e079f845a9d" name="Changes" comment="Initial commit, fastapi basic setup with documentation">
-      <change afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+    <list default="true" id="7b57d927-225c-4399-8852-5e079f845a9d" name="Changes" comment="moving the config values to config.py">
+      <change afterPath="$PROJECT_DIR$/dao/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/menu_handler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/user_handler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/menus.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/users.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routers/menus.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routers/users.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schemas/schemas.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <list id="5945384e-0ad8-4b35-8ec9-721492244e1d" name="pyrestapi" comment="pyrestapi">
       <change afterPath="$PROJECT_DIR$/../pythonRestApi/pyrestapi/data/menu.json" afterDir="false" />
@@ -47,9 +57,17 @@
     "Python.server.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main"
+    "git-widget-placeholder": "main",
+    "settings.editor.selected.configurable": "configurable.group.language"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/schemas" />
+      <recent name="$PROJECT_DIR$/config" />
+      <recent name="$PROJECT_DIR$/dao" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -83,7 +101,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704652691580</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="moving the config values to config.py">
+      <option name="closed" value="true" />
+      <created>1704654300141</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704654300141</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -100,6 +126,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="pyrestapi" />
     <MESSAGE value="Initial commit, fastapi basic setup with documentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit, fastapi basic setup with documentation" />
+    <MESSAGE value="moving the config values to config.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="moving the config values to config.py" />
   </component>
 </project>

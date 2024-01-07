@@ -1,6 +1,7 @@
 from fastapi import FastAPI
-from config import settings
-
+from routers import users
+from routers import menus
+from config.config import settings
 
 app = FastAPI(title=settings.TITLE,
               description=settings.DESCRIPTION,
@@ -14,17 +15,10 @@ app = FastAPI(title=settings.TITLE,
               docs_url=settings.DOCUMENTATION_URL
               )
 
+app.include_router(users.router)
+app.include_router(menus.router)
+
 
 @app.get("/", tags=[])
 def index():
     return {"message": "welcome"}
-
-
-@app.get("/menus", tags=["users"])
-def get_menus():
-    return {"menus": "menu1"}
-
-
-@app.get("/users", tags=["menus"])
-def get_users():
-    return {"user": "user1"}
