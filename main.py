@@ -1,29 +1,17 @@
 from fastapi import FastAPI
+from config import settings
 
-app_description = """
-## This is a weekly Menu plan application, to create/update/list the menu plan for each day.
-"""
-tags = [
-    {
-        "name": "users",
-        "description": "All user related routes"
-    },
-    {
-        "name": "menus",
-        "description": "All menu related routes"
-    }
-]
 
-app = FastAPI(title="Weekly Menu Plan",
-              description=app_description,
-              version="1.0",
+app = FastAPI(title=settings.TITLE,
+              description=settings.DESCRIPTION,
+              version=settings.VERSION,
               contact={
-                  "name": ": Girish",
-                  "email": "girish@bal.com"
+                  "name": settings.NAME,
+                  "email": settings.EMAIL
               },
-              openapi_tags=tags,
-              openapi_url="/api/v1/openapi.json",
-              docs_url="/documentation"
+              openapi_tags=settings.TAGS,
+              openapi_url=settings.OPENAPI_URL,
+              docs_url=settings.DOCUMENTATION_URL
               )
 
 
